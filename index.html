@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+  <link rel="icon" sizes="42x42" href="krithi edit image.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Montserrat:wght@700&family=Mooli&family=Nunito+Sans:ital,opsz,wght@0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;1,6..12,1000&family=Poppins&display=swap');
+
+    :root {
+        --dark: #1b1f24;
+        --color: #537FE7;
+        --section-color: #E9F8F9;
+
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: 'Nunito Sans', sans-serif;
+    }
+
+    .bg-newdark {
+        background-color: var(--dark);
+    }
+
+    .bio img {
+        border-radius: 50%;
+        border: 5px solid var(--color);
+        box-shadow: 10px 5px 10px #435c97,
+            0px 1px 20px var(--color);
+    }
+
+    ol li {
+        list-style: none;
+        margin-bottom: 10px;
+        color: gray;
+    }
+
+    strong {
+        color: white;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .work .card-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .work .card-text {
+        flex-grow: 1;
+    }
+
+    .navbar-brand {
+        letter-spacing: 2px;
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+    .about-session .card-title {
+        font-weight: 900;
+        font-size: 40px;
+    }
+
+    span {
+        color: var(--color);
+    }
+
+    .col-lg-2 {
+        width: 150px;
+        text-align: center;
+        color: var(--color);
+        background-color: var(--dark);
+        transition: 0.3s;
+    }
+
+    .col-lg-2 a {
+        color: var(--color);
+        font-size: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 50px;
+    }
+
+    .col-lg-2:hover {
+        transition: 0.3s;
+        box-shadow: 0px 0px 1px 3px var(--color);
+        background-color: var(--dark);
+        cursor: pointer;
+    }
+
+    @media all and (min-width: 992px) {
+        .navbar .nav-item .dropdown-menu {
+            display: block;
+            opacity: 0;
+            visibility: hidden;
+            transition: .3s;
+            margin-top: 0;
+        }
+
+        .navbar .nav-item:hover .nav-link {
+            color: var(--color);
+        }
+
+        .navbar .nav-item:hover .dropdown-menu {
+            transition: .3s;
+            opacity: 1;
+            visibility: visible;
+            top: 100%;
+            transform: rotateX(0deg);
+        }
+    }
+</style>
+
+<body>
+    <!-- Header -->
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-newdark ">
+            <div class="container">
+                <span class="navbar-brand" style="color: var(--color);"><i
+                        class="fa-brands fa-kickstarter"></i>IRUTHIKA</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#knowme-section">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work">Work</a>
+                        </li>
+                    </ul>
+                    <ul style="list-style:none;" class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link"
+                                href="https://www.instagram.com/_legend_p_r_i_n_c_e_s_s_/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="https://www.linkedin.com/in/kiruthika-k-07a65b220/" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="mailto:kkiruthika810@gmail.com"
+                                target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                        </li>
+                    </ul>
+                    <div class=" d-flex justify-content-end">
+                        <button class="btn btn-primary col-lg-2" type="submit">Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- About-session -->
+        <div class="bg-newdark p-3">
+            <div class="card  container text-light bg-newdark ">
+                <div class="row">
+                    <div class="col-md-8 d-flex align-items-center">
+                        <div class="card-body">
+                            <h6>Hii There,</h6>
+                            <h2 class="card-title">I'm <span style="color: var(--color);">Kiruthika</span></h2>
+                            <p class="card-text text-muted">A huperactive person follow her passion.Looking for
+                                challenging role in your
+                                reputable organisation where i can fully use my skills for the success as well as
+                                enhance my
+                                knowledge in new emerging technologies</p>
+
+
+                            <a href="https://www.frontendmentor.io/home/my-challenges" target="_blank"
+                                class="btn btn-primary col-lg-2">View Projects</a>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <img src="krithi edit image.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- know me section -->
+    <div class="bg-dark p-3" id="knowme-section">
+        <div class="card  container text-light bg-dark ">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 bio">
+                    <img src="krithi edit image.png" class="img-fluid" alt="krithi-anime"
+                        style="width: 350px; height: 350px; ">
+                </div>
+                <div class="col-md-6 col-sm-12 d-flex align-items-center">
+                    <div class="card-body p-5">
+
+                        <ol>
+                            <h4 style="font-weight: 900; font-size: 30px;">I am a Frontend <span>Developer</span></h4>
+                            <li>
+                                <strong>Experience:</strong> Fresher
+                            </li>
+
+                            <li><strong>Location:</strong> TamilNadu, India</li>
+                            <li><strong>Skills:</strong> HTML, CSS, BOOTSTRAP, JAVASCRIPT</li>
+                            <li><strong>Extra-curriculum:</strong> Distinction in Typewriting</li>
+                            <a href="#education" class="btn btn-primary col-lg-2">Know more</a>
+                        </ol>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- work details -->
+    <div class="bg-newdark" id="work">
+        <div class="container pt-5 pb-5">
+            <h1 class="text-light text-center pb-4" style="font-weight: 900; font-size: 30px;">My <span>Work</span></h1>
+            <div class="row  gy-3">
+                <div class="col-md">
+                    <div class="card h-100 bg-dark text-light">
+                        <div class="card-body">
+                            <h5 class="card-title">NTF preview Card</h5>
+                            <p class="card-text text-muted">This HTML & CSS only challenge is perfect for anyone just
+                                starting out or anyone wanting a small project to play around
+                                with.</p>
+                            <a href="https://64b0fe897f7c04137ddc7a4c--polite-cannoli-970b21.netlify.app/"
+                                target="_blank" class="btn btn-primary col-lg-2">View</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="card h-100 bg-dark text-light">
+                        <div class="card-body">
+                            <h5 class="card-title">QR code Component</h5>
+                            <p class="card-text text-muted">Some quick example text to build on the card title and make
+                                up the bulk of the card's
+                                content.</p>
+                            <a href="https://64ac0e0e7629511f0a2e007a--glistening-seahorse-912b32.netlify.app/"
+                                target="_blank" class="btn btn-primary col-lg-2">View</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="card h-100 bg-dark text-light">
+                        <div class="card-body">
+                            <h5 class="card-title">Responsive Pricing component using Toggle Master</h5>
+                            <p class="card-text text-muted">Some quick example text to build on the card title and make
+                                up the bulk of the card's
+                                content.</p>
+                            <a href="https://65001bc6860af03395867a13--idyllic-dusk-c626f1.netlify.app/" target="_blank"
+                                class="btn btn-primary col-lg-2">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education -->
+    <div class="education bg-dark pb-4" id="education">
+        <div class="container text-light">
+            <h1 class="heading text-center pb-4 pt-5" style="font-weight: 900; font-size: 30px;">My<span> Education
+                </span></h1>
+            <div class="row pt-3 d-flex align-items-center">
+                <div class="col-sm ">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>B.Tech Information Technology</span>
+                    <h6>2019-2023</h6>
+                    <p class="text-muted">Velalar college of Engineering and Technology Erode<br>
+                        <strong>CGPA : 8.89</strong>
+                    </p>
+                </div>
+                <div class="col-sm">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>HSC</span>
+                    <h6>2019</h6>
+                    <p class="text-muted">Kalaimagal Kalvi Nilayam Girl's Higher Secondary School<br><strong>Scored :
+                            75%</strong></p>
+                </div>
+                <div class="col-sm">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>SSLC</span>
+                    <h6>2017</h6>
+                    <p class="text-muted">Kalaimagal Kalvi Nilayam Girl's Higher Secondary School<br><strong>Scored :
+                            89%</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact me -->
+    <div class="bg-newdark pt-4" id="contact">
+        <div>
+            <h1 class="text-center text-light pb-4" style="font-weight: 900; font-size: 30px;">Contact <span> Me</span>
+            </h1>
+        </div>
+        <div class="container bg-newdark d-flex justify-content-center">
+            <form action="">
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Email ID">
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Comments</label>
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto mb-4">
+                    <a href="#" class="btn btn-primary"><i class="fa-brands fa-telegram"></i> Send</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="p-1 text-center bg-dark text-light">
+        <p class="fs-6">Copyright &copy;2023 <a href="https://github.com/KiruthikaKanagu"
+                target="_blank">-Kiruthika-</a>All rights
+            deserved.</p>
+    </footer>
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
